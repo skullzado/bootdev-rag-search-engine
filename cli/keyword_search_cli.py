@@ -13,7 +13,7 @@ def main() -> None:
     search_parser.add_argument("query", type=str, help="Search query")
 
     args = parser.parse_args()
-
+   
     match args.command:
         case "search":
             print("Searching for:", args.query)
